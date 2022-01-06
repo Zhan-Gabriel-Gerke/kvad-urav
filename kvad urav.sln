@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "kvad urav", "kvad urav.pyproj", "{884131C4-304D-4B09-8E15-BA325B2EFCFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{884131C4-304D-4B09-8E15-BA325B2EFCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884131C4-304D-4B09-8E15-BA325B2EFCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AD30CA2-FBB3-4CFB-A4A4-ADA9FC46F713}
+	EndGlobalSection
+EndGlobal
