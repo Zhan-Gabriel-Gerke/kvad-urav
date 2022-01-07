@@ -34,8 +34,8 @@ def lahenda():
 
 aken=Tk()
 aken.title("Решение квадратного уравнения")
-aken.geometry("620x200")
-lk=Label(aken,text="Решение квадратного уравнения",font="Arail 20", fg="green",bg="lightblue")
+aken.geometry("800x300")
+lk=Label(aken,text="Решение квадратного уравнения",font="Arial 20", fg="green",bg="lightblue")
 lk.pack()
 otv=Label(aken,text="Решение", height=4,width=60,bg="yellow")
 otv.pack(side=BOTTOM)
@@ -53,24 +53,6 @@ ghj=Label(aken,text="=0",font="Arial 20", fg="green")
 ghj.pack(side=LEFT)
 bnt=Button(aken,text="Решить",font="Arial 20",bg="green",command=lahenda)
 bnt.pack(side=LEFT)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
