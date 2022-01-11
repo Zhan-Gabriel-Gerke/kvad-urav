@@ -115,8 +115,26 @@ def o4ki():
     plt.xlabel('x')
     plt.grid(True)
     plt.show()
-def babo4():
-    pass
+def zont():
+    x1=np.arange(-12,12,0.5)
+    y1=(-1/18)*x1*x1+12
+    x2=np.arange(-4,4,0.5)
+    y2=(-1/8)*x2*x2+6
+    x3=np.arange(-12,-4,0.5)
+    y3=(-1/8)*(x3+8)**2+6
+    x4=np.arange(4,12,0.5)
+    y4=(-1/8)*(x4-8)**2+6
+    x5=np.arange(-4,-0.3,0.5)
+    y5=2*(x5+3)**2-9
+    x6=np.arange(-4,0.2,0.5)
+    y6=1.5*(x6+3)**2-10
+    fig = plt.figure()
+    plt.plot(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6)
+    plt.title('Зонтик')
+    plt.ylabel('y')
+    plt.xlabel('x')
+    plt.grid(True)
+    plt.show()
 aken=Tk()
 aken.title("Решение квадратного уравнения")
 aken.geometry("800x300")
@@ -150,6 +168,6 @@ kit=Radiobutton(f2,text="Кит",font="Arial 20",bg="blue",command=kit)
 kit.pack()
 o4ki=Radiobutton(f2,text="очки",font="Arial 20",bg="blue",command=o4ki)
 o4ki.pack()
-babo4=Radiobutton(f2,text="Бабочка",font="Arial 20",bg="blue",command=babo4)
-babo4.pack()
+zont=Radiobutton(f2,text="зонт",font="Arial 20",bg="blue",command=zont)
+zont.pack()
 aken.mainloop()
