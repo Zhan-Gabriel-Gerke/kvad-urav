@@ -58,20 +58,22 @@ t=0
 def veel():
     global t
     if t==0:
-        aken.geometry(str(aken.winfo_width()+200())+"x"+str(aken.winfo_height()+200))
-        btn_veel.config(text="Уменьшить окно")
+        aken.geometry(str(aken.winfo_width())+"x"+str(aken.winfo_height()+200))
+        uvokno.config(text="Уменьшить окно")
         t=1
     else:
-        aken.geometry(str(aken.winfo_width()+200)+"x"+str(aken.winfo_height()-200))
-        btn_veel.config(text="Увеличить окно")
+        aken.geometry(str(aken.winfo_width())+"x"+str(aken.winfo_height()-200))
+        uvokno.config(text="Увеличить окно")
         t=0
 def kit():
     x1=np.arange(0,9,0.5)
     y1=(2/27)*x1*x1-3
     x2=np.arange(-10,0,0.5)
     y2=0.04*x1*x1-3
-    x=np.arange(-9,-3,0.5)
-    y=(())
+    x3=np.arange(-9,-3,0.5)
+    y3=(2/9)*(x3+6)**2+1
+    x4=np.arange(-3,10,0.5)
+    y4=
     fig = plt.figure()
     plt.plot(x1, y1,"g-d")
     plt.title("Квадратное уравнение")
