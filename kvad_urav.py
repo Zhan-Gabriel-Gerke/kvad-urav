@@ -83,9 +83,9 @@ def kit():
     x8=np.arange(-15,-12.5,0.5)
     y8=(-0.5)*(x8+13)**2+3
     x9=np.arange(-15,-10,0.5)
-    y9=1
+    y9=[1]*len(x9)
     x10=np.arange(3,4,0.5)
-    y10=3
+    y10=[3]*len(x10)
     fig = plt.figure()
     plt.plot(x1, y1,"g-d")
     plt.title("Квадратное уравнение")
