@@ -54,16 +54,35 @@ def graafik():
     else:
         text=f"график нет возможности построить"
     otv.configure(text=f"D={D}\n{t}\n{text}")
+t=0
 def veel():
     global t
     if t==0:
-        aken.geometry(str(aken.winfo())+"x"+str(aken.winfo_height()+200))
+        aken.geometry(str(aken.winfo_width()+200())+"x"+str(aken.winfo_height()+200))
         btn_veel.config(text="Уменьшить окно")
         t=1
     else:
-        aken.geometry(str(aken.winfo())+"x"+str(aken.winfo_height()-200))
+        aken.geometry(str(aken.winfo_width()+200)+"x"+str(aken.winfo_height()-200))
         btn_veel.config(text="Увеличить окно")
         t=0
+def kit():
+    x1=np.arange(0,9,0.5)
+    y1=(2/27)*x1*x1-3
+    x2=np.arange(-10,0,0.5)
+    y2=0.04*x1*x1-3
+    x=np.arange(-9,-3,0.5)
+    y=(())
+    fig = plt.figure()
+    plt.plot(x1, y1,"g-d")
+    plt.title("Квадратное уравнение")
+    plt.ylabel("y")
+    plt.xlabel("x")
+    plt.grid(True)
+    plt.show()
+def zont():
+    pass
+def babo4():
+    pass
 aken=Tk()
 aken.title("Решение квадратного уравнения")
 aken.geometry("800x300")
@@ -91,11 +110,12 @@ bnt=Button(f1,text="Решить",font="Arial 20",bg="green",command=lahenda)
 bnt.pack(side=LEFT)
 bui_g=Button(f1,text="График", font="Arial 20",bg="green",command=graafik)
 bui_g.pack(side=LEFT)
-uvokno=Button(f2,text=)
-kit=Radiobutton(f2,text="Кит",font="Arial 20",bg="blue")
+uvokno=Button(f2,text="Увеличить окно", font="Arial 20",bg="green",command=veel)
+uvokno.pack()
+kit=Radiobutton(f2,text="Кит",font="Arial 20",bg="blue",command=kit)
 kit.pack()
-zont=Radiobutton(f2,text="Зонтик",font="Arial 20",bg="blue")
+zont=Radiobutton(f2,text="Зонтик",font="Arial 20",bg="blue",command=zont)
 zont.pack()
-babo4=Radiobutton(f2,text="Бабочка",font="Arial 20",bg="blue")
+babo4=Radiobutton(f2,text="Бабочка",font="Arial 20",bg="blue",command=babo4)
 babo4.pack()
 aken.mainloop()
